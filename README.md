@@ -417,3 +417,37 @@ Wireless Communication
 PC Companion Application
        ↓
 Computer / Gaming / Media Controls
+
+```
+---
+
+# 👨‍💻 Developer
+
+## Asad Ali Khan
+
+**Computer Science Student • Android Developer • AI & Computer Vision Developer**
+
+I am passionate about building practical software applications that combine modern Android development, artificial intelligence, computer vision, and intuitive user experiences.
+
+### 🔗 Connect With Me
+
+- **GitHub:** https://github.com/Asad-KhanDev
+- **LinkedIn:** https://www.linkedin.com/in/asad-ali-khan-b76325335
+- **Upwork:** https://www.upwork.com/freelancers/~011be02e85d9578791
+
+---
+
+# ⭐ Support the Project
+
+If you found **NEXA AIR** interesting or useful, please consider giving this repository a ⭐.
+
+Your support helps motivate continued development, experimentation, and future improvements to the project.
+
+
+---
+
+# 📄 License
+
+This project is currently provided for **portfolio, educational, and demonstration purposes**.
+
+© 2026 **Asad Ali Khan**. All Rights Reserved.
