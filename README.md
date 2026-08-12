@@ -1,67 +1,88 @@
+<div align="center">
 
-# ✋ NEXA AIR — AI Hand Gesture Tracking
+# 🟢 NEXA AIR
 
-<p align="center">
-  <strong>Real-Time AI • Computer Vision • Android • Gesture Recognition</strong>
+### AI-Powered Real-Time Hand Gesture Tracking for Android
+
+<p>
+  <strong>Computer Vision • Hand Tracking • Gesture Recognition • Real-Time Visualization</strong>
 </p>
 
-<p align="center">
-  NEXA AIR transforms an Android smartphone camera into a real-time AI-powered hand tracking and gesture recognition system.
+<p>
+  An Android computer-vision application that transforms a smartphone camera
+  into a real-time hand tracking and gesture recognition system.
 </p>
 
-<p align="center">
+<br>
 
-![Platform](https://img.shields.io/badge/Platform-Android-green)
-![Language](https://img.shields.io/badge/Language-Java-orange)
-![UI](https://img.shields.io/badge/UI-XML-blue)
-![Camera](https://img.shields.io/badge/Camera-CameraX-blue)
-![Vision](https://img.shields.io/badge/Vision-MediaPipe-purple)
-![Database](https://img.shields.io/badge/Storage-SharedPreferences-yellow)
-![Status](https://img.shields.io/badge/Status-Active%20Development-success)
-![Version](https://img.shields.io/badge/Version-v1.0-yellow)
+<img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white"/>
+<img src="https://img.shields.io/badge/Language-Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/UI-XML-1572B6?style=for-the-badge&logo=xml&logoColor=white"/>
+<img src="https://img.shields.io/badge/Camera-CameraX-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
+<img src="https://img.shields.io/badge/Computer%20Vision-MediaPipe-8E75B2?style=for-the-badge&logo=google&logoColor=white"/>
 
-</p>
+<br><br>
+
+<img src="https://img.shields.io/badge/Hand%20Tracking-21%20Landmarks-38F27F?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Gestures-5%20Recognized-38F27F?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Real--Time-Tracking-00C853?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/ViewBinding-Enabled-4CAF50?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Storage-SharedPreferences-FF9800?style=for-the-badge"/>
+
+<br><br>
+
+<img src="https://img.shields.io/badge/Custom%20Overlay-HandOverlayView-00BCD4?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/FPS-Monitoring-2196F3?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Latency-Monitoring-2196F3?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Confidence-Scoring-9C27B0?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Status-Active%20Development-success?style=for-the-badge"/>
+
+<br><br>
+
+</div>
 
 ---
 
-## 🚀 Overview
+# 🚀 Project Overview
 
 **NEXA AIR** is an Android-based artificial intelligence and computer-vision application designed to detect, track, and recognize human hand gestures in real time using a smartphone camera.
 
-The application combines **Android development, CameraX, MediaPipe Hand Landmarker, landmark-based gesture classification, custom real-time rendering, and performance monitoring** into a single computer-vision platform.
+The application combines **CameraX**, **MediaPipe Hand Landmarker**, custom landmark-based gesture classification, and a custom Android visualization layer to transform a smartphone into a real-time hand-tracking system.
 
-Instead of relying solely on traditional touch interaction, NEXA AIR explores how a smartphone camera can be used to understand hand positions and gestures.
+NEXA AIR currently recognizes five fundamental gestures:
 
-The current version recognizes five primary gestures:
-
-- 🖐️ Open Palm
+- ✋ Open Palm
 - ✊ Fist
 - ☝️ Point
 - 👍 Thumbs Up
 - ✌️ Peace
 
-The project has been designed with a modular processing pipeline so that the recognition system can be expanded with additional gestures and interaction capabilities in future versions.
+The system also provides `UNCERTAIN` and `NONE` recognition states when a supported gesture cannot be confidently determined.
 
-> **Current scope:** NEXA AIR is currently an Android hand-tracking and gesture-recognition application. Advanced PC control, mouse control, gaming controls, and wireless communication are planned future capabilities and are not part of the current implementation.
+> **NEXA AIR combines Android development, artificial intelligence, computer vision, camera processing, gesture recognition, real-time visualization, and modular application architecture into a single mobile application.**
 
 ---
 
-## 🎯 Project Objective
+# 🎯 Project Purpose
 
-The primary objective of NEXA AIR is to explore practical applications of **AI-powered computer vision on Android devices**.
+NEXA AIR was created to explore practical applications of **AI-powered computer vision on Android devices**.
 
-The application demonstrates how a smartphone can:
+Instead of relying only on traditional touch-based interaction, the project uses the smartphone camera to understand the structure and configuration of a user's hand.
+
+The current system can:
 
 - Detect a user's hand
 - Track 21 hand landmarks
-- Analyze hand landmark relationships
+- Analyze landmark relationships
 - Recognize predefined gestures
 - Calculate gesture confidence
-- Visualize hand tracking in real time
-- Monitor FPS and processing latency
-- Provide immediate tracking feedback
+- Visualize the tracked hand
+- Monitor FPS
+- Measure processing latency
+- Display real-time tracking status
+- Allow users to customize tracking behavior
 
-NEXA AIR serves as the foundation for a larger gesture-based human-computer interaction platform.
+The architecture is intentionally modular so that the computer-vision pipeline can be extended with additional gestures and interaction systems in future versions.
 
 ---
 
@@ -70,22 +91,36 @@ NEXA AIR serves as the foundation for a larger gesture-based human-computer inte
 NEXA AIR uses a modular processing pipeline:
 
 ```text
-CameraX
-   ↓
-CameraManager
-   ↓
-Camera Frames
-   ↓
-HandLandmarkerHelper
-   ↓
-MediaPipe Hand Landmarker
-   ↓
-21 Hand Landmarks
-   ↓
-GestureClassifier
-   ↓
-GestureResult
-   ↓
-GestureTrackingActivity
-   ↓
-HandOverlayView + UI
+┌──────────────────┐
+│     CameraX      │
+│  Camera Frames   │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│  CameraManager   │
+│ Camera Lifecycle │
+└────────┬─────────┘
+         ↓
+┌──────────────────────┐
+│ HandLandmarkerHelper │
+│    MediaPipe AI      │
+└────────┬─────────────┘
+         ↓
+┌──────────────────────┐
+│   21 Hand Landmarks  │
+└────────┬─────────────┘
+         ↓
+┌──────────────────────┐
+│  GestureClassifier   │
+│ Landmark Analysis    │
+└────────┬─────────────┘
+         ↓
+┌──────────────────────┐
+│    GestureResult     │
+│ Gesture + Confidence │
+└────────┬─────────────┘
+         ↓
+┌────────────────────────────┐
+│ GestureTrackingActivity    │
+│       + HandOverlayView     │
+└────────────────────────────┘
