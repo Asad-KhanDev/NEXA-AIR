@@ -279,3 +279,34 @@ GestureResult
 GestureTrackingActivity
    ↓
 HandOverlayView + UI
+```
+
+---
+
+# 📦 Download APK
+
+Experience **NEXA AIR** directly on your Android device without opening Android Studio.
+
+Download the latest APK release and explore the application's real-time hand tracking, AI-powered gesture recognition, MediaPipe Hand Landmarker integration, CameraX-based computer vision, live performance monitoring, and professional Android interface.
+
+| Information    | Details                          |
+| -------------- | -------------------------------- |
+| 📦 Version     | v1.0                             |
+| 📱 Platform    | Android                          |
+| ⚙️ Minimum SDK | API 24                           |
+| 🛠 Built With  | Java & XML                       |
+| 🧠 AI Vision   | MediaPipe Hand Landmarker        |
+| 📷 Camera      | CameraX                          |
+| 🖐️ Tracking    | 21-Point Hand Landmark Detection |
+| ✋ Gestures    | 5 Recognized Gestures            |
+| 📅 Release     | August 2026                      |
+
+<p align="center">
+
+<a href="PASTE_RELEASE_LINK_HERE">
+  <img src="https://img.shields.io/badge/⬇️%20Download-NEXA%20AIR%20APK-success?style=for-the-badge"/>
+</a>
+
+</p>
+
+> **Note:** NEXA AIR requires camera access for hand tracking and gesture recognition. Android may display a security warning when installing an APK downloaded outside Google Play.
