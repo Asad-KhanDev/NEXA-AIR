@@ -310,3 +310,110 @@ Download the latest APK release and explore the application's real-time hand tra
 </p>
 
 > **Note:** NEXA AIR requires camera access for hand tracking and gesture recognition. Android may display a security warning when installing an APK downloaded outside Google Play.
+
+
+---
+
+# 🚀 Future Roadmap
+
+NEXA AIR is currently focused on real-time hand tracking and gesture recognition. The long-term goal is to evolve the application into a broader **AI-powered gesture interaction platform**.
+
+The following features are planned for future releases:
+
+## 🖐️ Advanced Gesture Recognition
+
+- ➕ Additional hand gestures
+- 🧠 Improved gesture classification
+- 🎯 Custom user-defined gestures
+- ✋ More complex hand interaction patterns
+- 📚 Expanded gesture library
+- 📊 Advanced gesture confidence and recognition analysis
+
+---
+
+## 🖥️ Computer Control
+
+- 🖱️ Gesture-controlled mouse movement
+- ⌨️ Gesture-controlled keyboard input
+- 🖥️ Windows PC control
+- ⚡ Gesture-based application shortcuts
+- 🎯 Custom gesture-to-action mapping
+- 🔄 Gesture macros and automation
+
+---
+
+## 📡 Wireless PC Integration
+
+- 💻 Dedicated Windows companion application
+- 📱 Android-to-PC wireless communication
+- 🔗 Real-time gesture command transmission
+- ⚙️ Configurable PC interaction profiles
+- 🔐 Reliable device connection management
+
+---
+
+## 🎮 Gaming Mode
+
+- 🎮 Gesture-based gaming controls
+- 🕹️ Custom gaming gesture mappings
+- ⚡ Real-time gesture-to-input conversion
+- 🎯 Game-specific control profiles
+
+---
+
+## 🎵 Media & Application Controls
+
+Future versions may allow users to control supported applications through gestures, including:
+
+- ▶️ Play / Pause
+- ⏭️ Next / Previous
+- 🔊 Volume control
+- 🖥️ Presentation controls
+- 🔄 Application-specific shortcuts
+
+---
+
+## 🧠 Advanced Computer Vision
+
+- ✋ Multi-hand tracking
+- 🔍 Improved landmark processing
+- 🧠 More advanced gesture classification
+- 🎯 Improved calibration
+- 📈 Advanced tracking analytics
+- ⚡ Performance optimization
+- 📊 Gesture history and statistics
+
+---
+
+## 👤 Personalization
+
+- 👤 User profiles
+- ⚙️ Custom gesture configurations
+- 🎨 Additional interface customization
+- 💾 Personalized tracking preferences
+- 📋 Saved gesture-to-action profiles
+
+---
+
+## 🌐 Long-Term Vision
+
+The long-term vision for NEXA AIR is to transform the smartphone into an intelligent **AI-powered gesture controller**.
+
+The planned ecosystem could eventually follow this architecture:
+
+```text
+Android Smartphone
+       ↓
+CameraX
+       ↓
+AI Hand Tracking
+       ↓
+Gesture Recognition
+       ↓
+Gesture Mapping
+       ↓
+Wireless Communication
+       ↓
+PC Companion Application
+       ↓
+Computer / Gaming / Media Controls
