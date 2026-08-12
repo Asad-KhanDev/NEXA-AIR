@@ -152,9 +152,3 @@ White
 
 Secondary Text
 #B0B6BE
-
-```
-
-# 🏗 Architecture
-
-Here we gooo
