@@ -304,7 +304,7 @@ Download the latest APK release and explore the application's real-time hand tra
 <p align="center">
 
 <a href="https://github.com/Asad-KhanDev/NEXA-AIR/releases/download/v1.0/NEXA-AIR-v1.0.apk">
-<img src="https://img.shields.io/badge/⬇️%20Download-BUILD%20FIT%20APK-success?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/⬇️%20Download-NEXA%20AIR%20APK-success?style=for-the-badge"/>
 </a>
 
 </p>
